@@ -7,7 +7,7 @@ include 'includes/header.php';
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red rounded-full filter blur-[180px] opacity-[0.08] animate-pulse"></div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="flex items-center justify-center gap-1.5 mb-6 reveal active">
+            <div class="flex items-center justify-center gap-1.5 mb-6 reveal">
                 <div class="flex text-brand-red">
                     <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -18,16 +18,16 @@ include 'includes/header.php';
                 <span class="text-sm font-medium text-gray-400">Excelencia en Diseño & Desarrollo</span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6 reveal active delay-100">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6 reveal delay-100">
                 Sitios web que <span class="text-brand-red">venden.</span><br>
                 Diseño estratégico para negocios modernos.
             </h1>
 
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal active delay-200">
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal delay-200">
                 Transformamos visitantes en clientes fieles mediante arquitecturas digitales de alto rendimiento, optimizadas para conversión y velocidad.
             </p>
 
-            <div class="flex flex-col items-center gap-6 reveal active delay-300">
+            <div class="flex flex-col items-center gap-6 reveal delay-300">
                 <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
                     <a href="#contacto" class="px-8 py-4 bg-brand-red text-white rounded-full font-bold hover:bg-red-700 transition-all flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_50px_rgba(220,38,38,0.6)]">
                         Empezar Proyecto
@@ -50,7 +50,7 @@ include 'includes/header.php';
         <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-brand-black to-transparent z-10"></div>
         <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-brand-black to-transparent z-10"></div>
         
-        <div class="flex w-[200%] animate-marquee">
+        <div class="animate-marquee">
             <div class="flex w-1/2 justify-around items-center px-12 gap-12 text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
                 <span>Botanero Limón</span>
                 <span>Nue Lingerie</span>

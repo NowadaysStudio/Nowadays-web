@@ -1,11 +1,9 @@
-/* assets/css/styles.css */
-
-/* 1. VARIABLES GLOBALES (Para consistencia) */
+/* 1. VARIABLES GLOBALES */
 :root {
-    --brand-red: #DC2626;      /* Ajusta este rojo a tu tono exacto */
-    --brand-dark: #050505;     /* Fondo casi negro */
+    --brand-red: #DC2626;
+    --brand-dark: #050505;
     --brand-black: #000000;
-    --brand-gray: #111111;     /* Gris muy oscuro para tarjetas */
+    --brand-gray: #111111;
 }
 
 /* 2. CONFIGURACIÓN BÁSICA */
@@ -16,22 +14,19 @@ html {
 body {
     background-color: var(--brand-dark);
     color: #ffffff;
-    font-family: 'Inter', system-ui, sans-serif; /* Asegúrate de importar la fuente */
+    font-family: 'Inter', system-ui, sans-serif;
     overflow-x: hidden;
 }
 
-/* 3. CLASES DE COLORES PERSONALIZADOS 
-   (Úsalas si no estás compilando Tailwind con config.js) */
-
+/* 3. CLASES DE COLORES */
 .text-brand-red { color: var(--brand-red); }
 .bg-brand-red { background-color: var(--brand-red); }
 .border-brand-red { border-color: var(--brand-red); }
-
 .bg-brand-dark { background-color: var(--brand-dark); }
 .bg-brand-black { background-color: var(--brand-black); }
 .bg-brand-gray { background-color: var(--brand-gray); }
 
-/* 4. ANIMACIONES PERSONALIZADAS (Marquee Infinito) */
+/* 4. ANIMACIONES (Marquee) */
 @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
@@ -39,35 +34,28 @@ body {
 
 .animate-marquee {
     display: flex;
-    width: 200%; /* Importante para que el bucle sea fluido */
+    width: 200%;
     animation: marquee 25s linear infinite;
 }
+.animate-marquee:hover { animation-play-state: paused; }
 
-.animate-marquee:hover {
-    animation-play-state: paused; /* Pausa al pasar el mouse (opcional) */
-}
-
-/* 5. SISTEMA DE REVEAL (Aparición al hacer scroll) */
+/* 5. SISTEMA REVEAL */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-    will-change: opacity, transform; /* Optimización de rendimiento */
+    will-change: opacity, transform;
 }
-
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Delays escalonados para elementos en grupo */
 .reveal.delay-100 { transition-delay: 0.1s; }
 .reveal.delay-200 { transition-delay: 0.2s; }
 .reveal.delay-300 { transition-delay: 0.3s; }
 .reveal.delay-400 { transition-delay: 0.4s; }
 
-/* 6. ESTILOS DE FORMULARIO ESPECÍFICOS */
-/* Eliminar el estilo por defecto del autocompletado en navegadores */
+/* 6. FORMULARIOS */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -77,4 +65,41 @@ textarea:-webkit-autofill:focus {
     -webkit-text-fill-color: white;
     -webkit-box-shadow: 0 0 0px 1000px #000 inset;
     transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --- LO NUEVO QUE FALTABA --- */
+
+/* 7. ESTILOS DEL HEADER (Efecto Vidrio) */
+.glass-header {
+    background: rgba(5, 5, 5, 0.7); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(12px);     /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 8. ESTILOS DEL MENÚ DESPLEGABLE */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Se coloca justo debajo del botón */
+    left: 0;
+    width: 260px;
+    background: #050505;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0.75rem;
+    padding: 0.5rem 0;
+    
+    /* Estado inicial: Oculto */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px); /* Un poco desplazado hacia abajo */
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
+/* Cuando haces hover en el grupo padre (.group), muestra el menú */
+.group:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }

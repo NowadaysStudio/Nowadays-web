@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
@@ -29,83 +31,14 @@
                             redDark: '#991b1b',
                             white: '#f5f5f5'
                         }
-                    },
-                    animation: {
-                        'marquee': 'marquee 25s linear infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                    },
-                    keyframes: {
-                        marquee: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-100%)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
                     }
                 }
             }
         }
     </script>
-    <style>
-        /* Estilos base */
-        ::selection {
-            background-color: #DC2626;
-            color: #fff;
-        }
-        body {
-            background-color: #050505;
-            color: #f5f5f5;
-            overflow-x: hidden;
-        }
-        .glass-header {
-            background: rgba(5, 5, 5, 0.95); /* Un poco más opaco para legibilidad del dropdown */
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .gradient-text {
-            background: linear-gradient(to right, #ffffff, #a3a3a3);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
-        
-        /* Ajuste para el dropdown */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            min-width: 200px;
-            background-color: #0a0a0a;
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 0.5rem;
-            padding: 0.5rem 0;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-        }
-        .group:hover .dropdown-menu {
-            display: block;
-            animation: fadeInUp 0.2s ease-out forwards;
-        }
-    </style>
 </head>
 <body class="antialiased flex flex-col min-h-screen"> 
+
 <nav class="fixed w-full z-50 glass-header transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.php" class="text-2xl font-bold tracking-tighter hover:text-brand-red transition-colors flex items-center gap-1 group">
