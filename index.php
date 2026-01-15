@@ -1,132 +1,12 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NØWADAYS Studio | Sitios Web de Alto Rendimiento</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+<?php 
+$page_title = "NØWADAYS Studio | Sitios Web de Alto Rendimiento";
+include 'includes/header.php'; 
+?>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            black: '#050505',
-                            dark: '#0a0a0a',
-                            gray: '#171717',
-                            red: '#DC2626', 
-                            redDark: '#991b1b',
-                            white: '#f5f5f5'
-                        }
-                    },
-                    animation: {
-                        'marquee': 'marquee 25s linear infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                    },
-                    keyframes: {
-                        marquee: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-100%)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Estilos base */
-        ::selection {
-            background-color: #DC2626;
-            color: #fff;
-        }
-        body {
-            background-color: #050505;
-            color: #f5f5f5;
-            overflow-x: hidden;
-        }
-        .glass-header {
-            background: rgba(5, 5, 5, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .gradient-text {
-            background: linear-gradient(to right, #ffffff, #a3a3a3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-</head>
-<body class="antialiased">
-
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 glass-header transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold tracking-tighter hover:text-brand-red transition-colors flex items-center gap-1 group">
-                NØWADAYS<span class="font-light text-gray-400 group-hover:text-white transition-colors">Studio</span>
-                <span class="w-1.5 h-1.5 rounded-full bg-brand-red ml-0.5 animate-pulse"></span>
-            </a>
-            
-            <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
-                <a href="#proyectos" class="text-gray-400 hover:text-brand-red transition-colors">Portafolio</a>
-                <a href="#servicios" class="text-gray-400 hover:text-brand-red transition-colors">Soluciones</a>
-                <a href="#proceso" class="text-gray-400 hover:text-brand-red transition-colors">Método</a>
-                <a href="#contacto" class="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-brand-red hover:text-white transition-all transform hover:scale-105">
-                    Empezar Proyecto
-                </a>
-            </div>
-
-            <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-black border-b border-gray-800 absolute w-full px-6 py-6 space-y-4 shadow-2xl">
-            <a href="#proyectos" class="block py-2 text-gray-300 hover:text-brand-red">Portafolio</a>
-            <a href="#servicios" class="block py-2 text-gray-300 hover:text-brand-red">Soluciones</a>
-            <a href="#proceso" class="block py-2 text-gray-300 hover:text-brand-red">Método</a>
-            <a href="#contacto" class="block py-3 font-bold text-brand-red">Empezar Proyecto</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section (Propuesta de Valor) -->
     <section class="relative pt-32 pb-20 md:pt-48 md:pb-24 px-6 overflow-hidden">
-        <!-- Background Accents -->
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red rounded-full filter blur-[180px] opacity-[0.08] animate-pulse"></div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <!-- Social Proof Visual (Stars) -->
             <div class="flex items-center justify-center gap-1.5 mb-6 reveal active">
                 <div class="flex text-brand-red">
                     <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -138,18 +18,15 @@
                 <span class="text-sm font-medium text-gray-400">Excelencia en Diseño & Desarrollo</span>
             </div>
 
-            <!-- H1: Beneficio + Diferenciador -->
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6 reveal active delay-100">
                 Sitios web que <span class="text-brand-red">venden.</span><br>
                 Diseño estratégico para negocios modernos.
             </h1>
 
-            <!-- Subtítulo: Cómo + Público -->
             <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal active delay-200">
                 Transformamos visitantes en clientes fieles mediante arquitecturas digitales de alto rendimiento, optimizadas para conversión y velocidad.
             </p>
 
-            <!-- CTA & Location -->
             <div class="flex flex-col items-center gap-6 reveal active delay-300">
                 <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
                     <a href="#contacto" class="px-8 py-4 bg-brand-red text-white rounded-full font-bold hover:bg-red-700 transition-all flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_50px_rgba(220,38,38,0.6)]">
@@ -161,7 +38,6 @@
                     </a>
                 </div>
                 
-                <!-- Location -->
                 <div class="flex items-center gap-2 text-gray-500 text-sm mt-4">
                     <i data-lucide="map-pin" class="w-4 h-4 text-brand-red"></i>
                     <span>Monterrey, Nuevo León, MX</span>
@@ -170,13 +46,11 @@
         </div>
     </section>
 
-    <!-- Social Proof (Logos Marquee) -->
     <section class="border-y border-white/5 bg-brand-dark py-8 overflow-hidden relative">
         <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-brand-black to-transparent z-10"></div>
         <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-brand-black to-transparent z-10"></div>
         
         <div class="flex w-[200%] animate-marquee">
-            <!-- Logos Set 1 -->
             <div class="flex w-1/2 justify-around items-center px-12 gap-12 text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
                 <span>Botanero Limón</span>
                 <span>Nue Lingerie</span>
@@ -185,7 +59,6 @@
                 <span>Legal Solutions</span>
                 <span>Dr. Consultorios</span>
             </div>
-            <!-- Logos Set 2 (Duplicate for loop) -->
             <div class="flex w-1/2 justify-around items-center px-12 gap-12 text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
                 <span>Botanero Limón</span>
                 <span>Nue Lingerie</span>
@@ -197,7 +70,6 @@
         </div>
     </section>
 
-    <!-- Servicios (Result-Oriented) -->
     <section id="servicios" class="py-24 px-6 relative">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal">
@@ -209,7 +81,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 reveal delay-100">
                     <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
                         <i data-lucide="layout-template" class="w-6 h-6"></i>
@@ -222,7 +93,6 @@
                     </ul>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 reveal delay-200">
                     <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
                         <i data-lucide="shopping-bag" class="w-6 h-6"></i>
@@ -235,7 +105,6 @@
                     </ul>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 reveal delay-300">
                     <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
                         <i data-lucide="code-2" class="w-6 h-6"></i>
@@ -251,7 +120,6 @@
         </div>
     </section>
 
-    <!-- Portafolio / Casos de Éxito -->
     <section id="proyectos" class="py-24 bg-brand-dark px-6 border-y border-white/5">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 text-center reveal">
@@ -260,19 +128,15 @@
                 <p class="text-gray-400">Proyectos que redefinieron la presencia digital de nuestros clientes.</p>
             </div>
 
-            <!-- Project 1: Botanero Limón -->
             <div class="grid lg:grid-cols-2 gap-12 items-center mb-32 reveal">
-                <!-- Visual Mockup -->
                 <div class="relative group">
                     <div class="absolute inset-0 bg-lime-500/20 blur-3xl opacity-20 rounded-full group-hover:opacity-30 transition-opacity"></div>
                     <div class="bg-gray-900 border border-white/10 rounded-2xl aspect-video overflow-hidden relative shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
-                        <!-- IMAGEN DEL PROYECTO 1: Cambia el src por tu imagen -->
-                        <img src="img/botanero.png" 
+                        <img src="assets/img/botanero.png" 
                              alt="Botanero Limón Interfaz" 
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                     </div>
                 </div>
-                <!-- Content -->
                 <div class="space-y-8">
                     <div>
                         <h3 class="text-3xl font-bold mb-2">Botanero Limón</h3>
@@ -295,9 +159,7 @@
                 </div>
             </div>
 
-            <!-- Project 2: Nue Lingerie -->
             <div class="grid lg:grid-cols-2 gap-12 items-center reveal">
-                <!-- Content (Left on desktop for variation) -->
                 <div class="space-y-8 order-2 lg:order-1">
                     <div>
                         <h3 class="text-3xl font-bold mb-2">Nue Lingerie</h3>
@@ -318,12 +180,10 @@
                         <i data-lucide="external-link" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
                 </div>
-                <!-- Visual Mockup -->
                 <div class="relative group order-1 lg:order-2">
                     <div class="absolute inset-0 bg-rose-500/20 blur-3xl opacity-20 rounded-full group-hover:opacity-30 transition-opacity"></div>
                     <div class="bg-gray-900 border border-white/10 rounded-2xl aspect-video overflow-hidden relative shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
-                        <!-- IMAGEN DEL PROYECTO 2: Cambia el src por tu imagen -->
-                        <img src="img/nue.png" 
+                        <img src="assets/img/nue.png" 
                              alt="Nue Lingerie Interfaz" 
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                     </div>
@@ -332,16 +192,13 @@
         </div>
     </section>
 
-    <!-- Metodología -->
     <section id="proceso" class="py-24 px-6 relative overflow-hidden">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-16 reveal">Proceso sin fricción</h2>
             
             <div class="grid md:grid-cols-4 gap-8 relative">
-                <!-- Connecting Line -->
                 <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-brand-red/50 to-transparent"></div>
 
-                <!-- Step 1 -->
                 <div class="relative z-10 group reveal delay-100">
                     <div class="w-16 h-16 mx-auto bg-black border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:border-brand-red transition-colors shadow-lg">
                         <i data-lucide="search" class="w-6 h-6 text-white group-hover:text-brand-red transition-colors"></i>
@@ -350,7 +207,6 @@
                     <p class="text-sm text-gray-500 px-4">Análisis de objetivos, competencia y arquitectura de la información.</p>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="relative z-10 group reveal delay-200">
                     <div class="w-16 h-16 mx-auto bg-black border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:border-brand-red transition-colors shadow-lg">
                         <i data-lucide="pen-tool" class="w-6 h-6 text-white group-hover:text-brand-red transition-colors"></i>
@@ -359,7 +215,6 @@
                     <p class="text-sm text-gray-500 px-4">Prototipado visual enfocado en la experiencia de usuario.</p>
                 </div>
 
-                <!-- Step 3 -->
                 <div class="relative z-10 group reveal delay-300">
                     <div class="w-16 h-16 mx-auto bg-black border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:border-brand-red transition-colors shadow-lg">
                         <i data-lucide="code" class="w-6 h-6 text-white group-hover:text-brand-red transition-colors"></i>
@@ -368,7 +223,6 @@
                     <p class="text-sm text-gray-500 px-4">Codificación limpia, integración de CMS y optimización SEO.</p>
                 </div>
 
-                <!-- Step 4 -->
                 <div class="relative z-10 group reveal delay-400">
                     <div class="w-16 h-16 mx-auto bg-black border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:border-brand-red transition-colors shadow-lg">
                         <i data-lucide="rocket" class="w-6 h-6 text-white group-hover:text-brand-red transition-colors"></i>
@@ -380,7 +234,6 @@
         </div>
     </section>
 
-    <!-- Autoridad & Testimonios -->
     <section class="py-24 bg-brand-gray border-y border-white/5 px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
             <div class="reveal">
@@ -403,7 +256,6 @@
             </div>
 
             <div class="space-y-6 reveal delay-100">
-                <!-- Testimonial 1 -->
                 <div class="bg-black border border-white/10 p-6 rounded-xl relative">
                     <i data-lucide="quote" class="w-8 h-8 text-brand-red/20 absolute top-4 right-4"></i>
                     <p class="text-gray-300 italic mb-4">"Un gusto trabajar con NOWADAYS estudio, son unos emprendedores increíbles, las respuestas a las necesidades de la pagina las resuelven rapidísimo en tiempo  y forma ya casi dos años con ellos y nos sentimos muy agradecidos por su profesionalismo, honestidad y la versatilidad del diseño, diariamente vemos que muchas personas entran a la pagina y gracias a ello también han aumentado las reservaciones en el restaurante."</p>
@@ -415,7 +267,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testimonial 2 -->
                 <div class="bg-black border border-white/10 p-6 rounded-xl relative">
                     <i data-lucide="quote" class="w-8 h-8 text-brand-red/20 absolute top-4 right-4"></i>
                     <p class="text-gray-300 italic mb-4">"Me encantó la página web, le dieron el toque minimalista que justo estaba buscando. Además, la atención que tuvieron conmigo fue 10/10."</p>
@@ -431,7 +282,6 @@
         </div>
     </section>
 
-    <!-- FAQ (Objeciones) -->
     <section class="py-24 px-6 max-w-3xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-12 reveal">Preguntas Frecuentes</h2>
         
@@ -468,7 +318,6 @@
         </div>
     </section>
 
-    <!-- Final CTA / Lead Magnet -->
     <section id="contacto" class="py-24 px-6 relative bg-black overflow-hidden border-t border-brand-red">
         <div class="absolute inset-0 bg-brand-red/10 animate-pulse"></div>
         <div class="max-w-4xl mx-auto relative z-10 text-center bg-brand-dark/80 backdrop-blur-xl p-8 md:p-16 rounded-3xl border border-white/10 shadow-2xl">
@@ -527,29 +376,4 @@
         </div>
     </section>
 
-    <!-- Footer Simple -->
-    <footer class="py-8 bg-black text-center text-gray-600 text-sm border-t border-white/5">
-        <div class="flex justify-center gap-6 mb-4">
-            <a href="#" class="hover:text-white transition-colors">Instagram</a>
-            <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" class="hover:text-white transition-colors">Email</a>
-        </div>
-        <p>&copy; 2025 NØWADAYS Studio. Monterrey, NL.</p>
-    </footer>
-
-    <script>
-        lucide.createIcons();
-
-        // Scroll Reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
