@@ -3,11 +3,11 @@ $page_title = "NØWADAYS Studio | Sitios Web de Alto Rendimiento";
 include 'includes/header.php'; 
 ?>
 
-    <section class="relative pt-32 pb-20 md:pt-48 md:pb-24 px-6 overflow-hidden">
+    <section class="relative pt-28 pb-16 md:pt-32 md:pb-20 px-6 overflow-hidden">
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red rounded-full filter blur-[180px] opacity-[0.08] animate-pulse"></div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="flex items-center justify-center gap-1.5 mb-6 reveal">
+            <div class="flex items-center justify-center gap-1.5 mb-4 reveal">
                 <div class="flex text-brand-red">
                     <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -18,13 +18,13 @@ include 'includes/header.php';
                 <span class="text-sm font-medium text-gray-400">Excelencia en Diseño & Desarrollo</span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6 reveal delay-100">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-5 reveal delay-100">
                 Sitios web que <span class="text-brand-red">venden.</span><br>
                 Diseño estratégico para negocios modernos.
             </h1>
 
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal delay-200">
-                Transformamos visitantes en clientes fieles mediante arquitecturas digitales de alto rendimiento, optimizadas para conversión y velocidad.
+            <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-6 leading-relaxed reveal delay-200">
+                Transformamos visitantes en clientes mediante arquitecturas digitales optimizadas para conversión y velocidad.
             </p>
 
             <div class="flex flex-col items-center gap-6 reveal delay-300">
@@ -33,12 +33,13 @@ include 'includes/header.php';
                         Empezar Proyecto
                         <i data-lucide="arrow-right" class="w-5 h-5"></i>
                     </a>
-                    <a href="#proyectos" class="px-8 py-4 border border-white/10 bg-white/5 rounded-full font-medium hover:bg-white hover:text-black transition-all flex items-center justify-center">
+                    
+                    <a href="#proyectos" class="px-8 py-4 border border-white/10 bg-white/5 rounded-full font-medium hover:bg-white hover:text-black transition-all flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
                         Ver Resultados
                     </a>
                 </div>
                 
-                <div class="flex items-center gap-2 text-gray-500 text-sm mt-4">
+                <div class="flex items-center gap-2 text-gray-500 text-sm mt-2">
                     <i data-lucide="map-pin" class="w-4 h-4 text-brand-red"></i>
                     <span>Monterrey, Nuevo León, MX</span>
                 </div>
