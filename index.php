@@ -3,7 +3,7 @@ $page_title = "NØWADAYS Studio | Sitios Web de Alto Rendimiento";
 include 'includes/header.php'; 
 ?>
 
-    <section class="relative pt-28 pb-8 md:pt-32 md:pb-12 px-6 overflow-hidden">
+    <section class="relative pt-40 pb-8 md:pt-32 md:pb-12 px-6 overflow-hidden">
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red rounded-full filter blur-[180px] opacity-[0.08] animate-pulse"></div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -281,12 +281,12 @@ include 'includes/header.php';
             <div class="space-y-6 reveal delay-100">
                 <div class="bg-black border border-white/10 p-6 rounded-xl relative">
                     <i data-lucide="quote" class="w-8 h-8 text-brand-red/20 absolute top-4 right-4"></i>
-                    <p class="text-gray-300 italic mb-4">"Un gusto trabajar con NOWADAYS estudio, son unos emprendedores increíbles, las respuestas a las necesidades de la pagina las resuelven rapidísimo en tiempo  y forma ya casi dos años con ellos y nos sentimos muy agradecidos por su profesionalismo, honestidad y la versatilidad del diseño, diariamente vemos que muchas personas entran a la pagina y gracias a ello también han aumentado las reservaciones en el restaurante."</p>
+                    <p class="text-gray-300 italic mb-4">"Son unos emprendedores increíbles, las respuestas a las necesidades de la pagina las resuelven en tiempo y forma; ya casi dos años con ellos y nos sentimos muy agradecidos por su profesionalismo, honestidad y la versatilidad del diseño."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-bold text-xs text-white">MG</div>
                         <div>
                             <p class="text-sm font-bold text-white">Miriam García</p>
-                            <p class="text-xs text-gray-500">Dir. Administrativa Botanero Limón</p>
+                            <p class="text-xs text-gray-500">Dir. Administrativa, Botanero Limón</p>
                         </div>
                     </div>
                 </div>
@@ -297,7 +297,7 @@ include 'includes/header.php';
                         <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-bold text-xs text-white">BS</div>
                         <div>
                             <p class="text-sm font-bold text-white">Betzaida Sumano</p>
-                            <p class="text-xs text-gray-500">CEO NUE Lingerie</p>
+                            <p class="text-xs text-gray-500">CEO, Nue Lingerie</p>
                         </div>
                     </div>
                 </div>
