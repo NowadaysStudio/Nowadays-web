@@ -3,7 +3,7 @@ $page_title = "NØWADAYS Studio | Sitios Web de Alto Rendimiento";
 include 'includes/header.php'; 
 ?>
 
-    <section class="relative pt-28 pb-16 md:pt-32 md:pb-20 px-6 overflow-hidden">
+    <section class="relative pt-28 pb-8 md:pt-32 md:pb-12 px-6 overflow-hidden">
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red rounded-full filter blur-[180px] opacity-[0.08] animate-pulse"></div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -51,72 +51,94 @@ include 'includes/header.php';
         <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-brand-black to-transparent z-10"></div>
         <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-brand-black to-transparent z-10"></div>
         
-        <div class="animate-marquee">
-            <div class="flex w-1/2 justify-around items-center px-12 gap-12 text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
-                <span>Botanero Limón</span>
-                <span>Nue Lingerie</span>
-                <span>TechCorp</span>
-                <span>Constructora MX</span>
-                <span>Legal Solutions</span>
-                <span>Dr. Consultorios</span>
+        <div class="animate-marquee" style="width: max-content;">
+            
+            <div class="flex shrink-0 items-center text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
+                <span class="mx-12">Botanero Limón</span>
+                <span class="mx-12">Nue Lingerie</span>
+                <span class="mx-12">Gabrielo's Pizza</span>
+                <span class="mx-12">Boimsa</span>
             </div>
-            <div class="flex w-1/2 justify-around items-center px-12 gap-12 text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
-                <span>Botanero Limón</span>
-                <span>Nue Lingerie</span>
-                <span>TechCorp</span>
-                <span>Constructora MX</span>
-                <span>Legal Solutions</span>
-                <span>Dr. Consultorios</span>
+            
+            <div class="flex shrink-0 items-center text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
+                <span class="mx-12">Botanero Limón</span>
+                <span class="mx-12">Nue Lingerie</span>
+                <span class="mx-12">Gabrielo's Pizza</span>
+                <span class="mx-12">Boimsa</span>
             </div>
+
         </div>
     </section>
 
     <section id="servicios" class="py-24 px-6 relative">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6 reveal">
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Soluciones de Negocio</h2>
                     <p class="text-gray-400 max-w-md">No solo entregamos "diseño", entregamos herramientas que hacen crecer tu facturación.</p>
                 </div>
-                <div class="h-px bg-white/10 flex-grow ml-8 mb-2 hidden md:block"></div>
+                
+                <div class="h-0.5 bg-gradient-to-r from-brand-red via-brand-red/60 to-transparent flex-grow ml-8 hidden md:block rounded-full shadow-[0_0_15px_rgba(220,38,38,0.5)]"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 reveal delay-100">
-                    <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
-                        <i data-lucide="layout-template" class="w-6 h-6"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="reveal delay-100 h-full">
+                    <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
+                        <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
+                            <i data-lucide="layout-template" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Diseño Web</h3>
+                        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Páginas diseñadas para mostrar al mundo la esencia de su empresa. Eliminamos fricción y maximizamos la retención visual.</p>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Excelente diseño móvil</li>
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Profesionalidad digital</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Diseño UI/UX Estratégico</h3>
-                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">Interfaces diseñadas para guiar al usuario hacia la compra. Eliminamos fricción y maximizamos la retención visual.</p>
-                    <ul class="text-sm text-gray-500 space-y-2">
-                        <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Mobile First</li>
-                        <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Branding Digital</li>
-                    </ul>
                 </div>
 
-                <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 reveal delay-200">
-                    <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
-                        <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                <div class="reveal delay-200 h-full">
+                    <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
+                        <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
+                            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">E-Commerce Escalable</h3>
+                        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Tiendas diseñadas para guiar al usuario hacia la compra. Gestión óptima de inventario y formas de pago seguras.</p>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Integración de pasarelas de pago</li>
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Alta conversión de ventas</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">E-commerce Escalable</h3>
-                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">Tiendas en línea robustas. Optimizadas para gestión de inventarios masivos y pasarelas de pago seguras.</p>
-                    <ul class="text-sm text-gray-500 space-y-2">
-                        <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Integración Pasarelas</li>
-                        <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Dashboards de Venta</li>
-                    </ul>
                 </div>
 
-                <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 reveal delay-300">
-                    <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
-                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                <div class="reveal delay-300 h-full">
+                    <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
+                        <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
+                            <i data-lucide="code-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Desarrollo a Medida</h3>
+                        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Programación web desde cero. Funcionalidad avanzada, automatización y sistemas de gestión interna.</p>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Programación a la medida</li>
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Gestión de usuarios y contraseñas</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Desarrollo a Medida</h3>
-                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">Soluciones complejas con Django y Python. Bases de datos, APIs personalizadas y sistemas de gestión interna.</p>
-                    <ul class="text-sm text-gray-500 space-y-2">
-                        <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Backend Robusto</li>
-                        <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Seguridad Avanzada</li>
-                    </ul>
                 </div>
+
+                <div class="reveal delay-400 h-full">
+                    <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
+                        <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Correo Empresarial</h3>
+                        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Proyecta confianza inmediata con direcciones de correo electrónico personalizadas (@tuempresa.com).</p>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Dominio Propio</li>
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Asesoría para migración</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
