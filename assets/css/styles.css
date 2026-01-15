@@ -1,0 +1,80 @@
+/* assets/css/styles.css */
+
+/* 1. VARIABLES GLOBALES (Para consistencia) */
+:root {
+    --brand-red: #DC2626;      /* Ajusta este rojo a tu tono exacto */
+    --brand-dark: #050505;     /* Fondo casi negro */
+    --brand-black: #000000;
+    --brand-gray: #111111;     /* Gris muy oscuro para tarjetas */
+}
+
+/* 2. CONFIGURACIÓN BÁSICA */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--brand-dark);
+    color: #ffffff;
+    font-family: 'Inter', system-ui, sans-serif; /* Asegúrate de importar la fuente */
+    overflow-x: hidden;
+}
+
+/* 3. CLASES DE COLORES PERSONALIZADOS 
+   (Úsalas si no estás compilando Tailwind con config.js) */
+
+.text-brand-red { color: var(--brand-red); }
+.bg-brand-red { background-color: var(--brand-red); }
+.border-brand-red { border-color: var(--brand-red); }
+
+.bg-brand-dark { background-color: var(--brand-dark); }
+.bg-brand-black { background-color: var(--brand-black); }
+.bg-brand-gray { background-color: var(--brand-gray); }
+
+/* 4. ANIMACIONES PERSONALIZADAS (Marquee Infinito) */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: flex;
+    width: 200%; /* Importante para que el bucle sea fluido */
+    animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused; /* Pausa al pasar el mouse (opcional) */
+}
+
+/* 5. SISTEMA DE REVEAL (Aparición al hacer scroll) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    will-change: opacity, transform; /* Optimización de rendimiento */
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delays escalonados para elementos en grupo */
+.reveal.delay-100 { transition-delay: 0.1s; }
+.reveal.delay-200 { transition-delay: 0.2s; }
+.reveal.delay-300 { transition-delay: 0.3s; }
+.reveal.delay-400 { transition-delay: 0.4s; }
+
+/* 6. ESTILOS DE FORMULARIO ESPECÍFICOS */
+/* Eliminar el estilo por defecto del autocompletado en navegadores */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
