@@ -74,7 +74,9 @@ include 'includes/header.php';
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6 reveal">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Soluciones de Negocio</h2>
+                    <h2 class="text-4xl md:text-4xl font-bold mb-4 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+                        Soluciones de Negocio
+                    </h2>
                     <p class="text-gray-400 max-w-md">No solo entregamos "diseño", entregamos herramientas que hacen crecer tu facturación.</p>
                 </div>
                 
@@ -143,81 +145,91 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <section id="proyectos" class="py-24 bg-brand-dark px-6 border-y border-white/5">
+    <section id="proyectos" class="py-16 bg-brand-dark px-6 border-y border-white/5">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-20 text-center reveal">
-                <span class="text-brand-red font-bold tracking-widest text-xs uppercase mb-2 block">Resultados Reales</span>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Casos de Éxito</h2>
+            
+            <div class="mb-12 text-center reveal"> 
+                <span class="text-brand-red font-bold tracking-widest text-sm uppercase mb-4 block">Resultados Reales</span>
+                
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+                    Casos de Éxito
+                </h2>
+                
                 <p class="text-gray-400">Proyectos que redefinieron la presencia digital de nuestros clientes.</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-center mb-32 reveal">
-                <div class="relative group">
-                    <div class="absolute inset-0 bg-lime-500/20 blur-3xl opacity-20 rounded-full group-hover:opacity-30 transition-opacity"></div>
-                    <div class="bg-gray-900 border border-white/10 rounded-2xl aspect-video overflow-hidden relative shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
-                        <img src="assets/img/botanero.png" 
-                             alt="Botanero Limón Interfaz" 
-                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
-                    </div>
-                </div>
-                <div class="space-y-8">
-                    <div>
-                        <h3 class="text-3xl font-bold mb-2">Botanero Limón</h3>
-                        <p class="text-gray-400 leading-relaxed">Rediseño total de la experiencia digital para uno de los spots más icónicos. Implementación de menús interactivos y sistema de reservas optimizado.</p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="border-l-2 border-brand-red pl-4">
-                            <span class="block text-3xl font-bold text-white mb-1">+40%</span>
-                            <span class="text-xs text-gray-500 uppercase tracking-wide">Reservas Online</span>
-                        </div>
-                        <div class="border-l-2 border-brand-red pl-4">
-                            <span class="block text-3xl font-bold text-white mb-1">1.2s</span>
-                            <span class="text-xs text-gray-500 uppercase tracking-wide">Velocidad de Carga</span>
+            <div class="space-y-16 reveal">
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative group max-w-lg mx-auto lg:mr-0 w-full"> 
+                        <div class="absolute inset-0 bg-lime-500/20 blur-3xl opacity-20 rounded-full group-hover:opacity-30 transition-opacity"></div>
+                        <div class="bg-gray-900 border border-white/10 rounded-2xl aspect-video overflow-hidden relative shadow-2xl">
+                            <img src="assets/img/botanero.png" 
+                                 alt="Botanero Limón Interfaz" 
+                                 class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <a href="https://botanerolimon.com/" target="_blank" class="inline-flex items-center text-white font-bold hover:text-brand-red transition-colors group">
-                        Visitar Sitio Web 
-                        <i data-lucide="external-link" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                </div>
-            </div>
+                    
+                    <div class="space-y-6 max-w-lg mx-auto lg:ml-0 w-full text-center lg:text-left"> 
+                        <div>
+                            <h3 class="text-3xl font-bold mb-3">Botanero Limón</h3>
+                            <p class="text-gray-400 leading-relaxed mb-6">Diseño total de la experiencia digital de un spot icónico de Monterrey. Transformamos un menú estático en una herramienta interactiva que facilita la decisión del comensal.</p>
+                            
+                            <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">UX/UI Design</span>
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">WordPress</span>
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">CTAs</span>
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">SEO Local</span>
+                            </div>
+                        </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-center reveal">
-                <div class="space-y-8 order-2 lg:order-1">
-                    <div>
-                        <h3 class="text-3xl font-bold mb-2">Nue Lingerie</h3>
-                        <p class="text-gray-400 leading-relaxed">Plataforma E-commerce minimalista enfocada en la conversión. Diseño Mobile-First para capturar el tráfico de redes sociales.</p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="border-l-2 border-brand-red pl-4">
-                            <span class="block text-3xl font-bold text-white mb-1">2X</span>
-                            <span class="text-xs text-gray-500 uppercase tracking-wide">Retención de Usuario</span>
-                        </div>
-                        <div class="border-l-2 border-brand-red pl-4">
-                            <span class="block text-3xl font-bold text-white mb-1">98%</span>
-                            <span class="text-xs text-gray-500 uppercase tracking-wide">Score SEO</span>
-                        </div>
-                    </div>
-                    <a href="https://nuelingeriemx.com/" target="_blank" class="inline-flex items-center text-white font-bold hover:text-brand-red transition-colors group">
-                        Visitar Sitio Web 
-                        <i data-lucide="external-link" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                </div>
-                <div class="relative group order-1 lg:order-2">
-                    <div class="absolute inset-0 bg-rose-500/20 blur-3xl opacity-20 rounded-full group-hover:opacity-30 transition-opacity"></div>
-                    <div class="bg-gray-900 border border-white/10 rounded-2xl aspect-video overflow-hidden relative shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
-                        <img src="assets/img/nue.png" 
-                             alt="Nue Lingerie Interfaz" 
-                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        <a href="https://botanerolimon.com/" target="_blank" class="inline-flex items-center text-white font-bold hover:text-brand-red transition-colors group">
+                            Visitar Sitio Web 
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
                 </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 order-2 lg:order-1 max-w-lg mx-auto lg:mr-0 w-full text-center lg:text-left">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-3">Nue Lingerie</h3>
+                            <p class="text-gray-400 leading-relaxed mb-6">Plataforma E-commerce minimalista enfocada en la conversión. Diseño Mobile-First para convertir eficientemente el tráfico de redes sociales.</p>
+                            
+                            <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">Shopify</span>
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">E-commerce</span>
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">Pasarela de Pagos</span>
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-gray-300">Meta Ads</span>
+                            </div>
+                        </div>
+
+                        <a href="https://nuelingeriemx.com/" target="_blank" class="inline-flex items-center text-white font-bold hover:text-brand-red transition-colors group">
+                            Visitar Sitio Web 
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="relative group order-1 lg:order-2 max-w-lg mx-auto lg:ml-0 w-full"> 
+                        <div class="absolute inset-0 bg-rose-500/20 blur-3xl opacity-20 rounded-full group-hover:opacity-30 transition-opacity"></div>
+                        <div class="bg-gray-900 border border-white/10 rounded-2xl aspect-video overflow-hidden relative shadow-2xl">
+                            <img src="assets/img/nue.png" 
+                                 alt="Nue Lingerie Interfaz" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="proceso" class="py-24 px-6 relative overflow-hidden">
+    <section id="proceso" class="py-16 px-6 relative overflow-hidden">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-16 reveal">Proceso sin fricción</h2>
+            
+            <h2 class="text-4xl md:text-4xl font-bold mb-12 reveal text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+                Proceso sin fricción
+            </h2>
             
             <div class="grid md:grid-cols-4 gap-8 relative">
                 <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-brand-red/50 to-transparent"></div>
@@ -226,7 +238,7 @@ include 'includes/header.php';
                     <div class="w-16 h-16 mx-auto bg-black border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:border-brand-red transition-colors shadow-lg">
                         <i data-lucide="search" class="w-6 h-6 text-white group-hover:text-brand-red transition-colors"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Discovery</h3>
+                    <h3 class="font-bold text-lg mb-2">Descubrimiento</h3>
                     <p class="text-sm text-gray-500 px-4">Análisis de objetivos, competencia y arquitectura de la información.</p>
                 </div>
 
@@ -243,7 +255,7 @@ include 'includes/header.php';
                         <i data-lucide="code" class="w-6 h-6 text-white group-hover:text-brand-red transition-colors"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2">Desarrollo</h3>
-                    <p class="text-sm text-gray-500 px-4">Codificación limpia, integración de CMS y optimización SEO.</p>
+                    <p class="text-sm text-gray-500 px-4">Codificación limpia, integración de funcionalidades y optimización SEO.</p>
                 </div>
 
                 <div class="relative z-10 group reveal delay-400">
@@ -257,50 +269,81 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <section class="py-24 bg-brand-gray border-y border-white/5 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-            <div class="reveal">
+    <section class="py-16 bg-brand-gray border-y border-white/5 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-stretch">
+            
+            <div class="reveal h-full flex flex-col justify-center">
                 <span class="text-brand-red font-bold text-sm uppercase mb-2 block">Sobre Nosotros</span>
-                <h2 class="text-3xl font-bold mb-6">Expertos en Código y Negocios.</h2>
-                <p class="text-gray-400 leading-relaxed mb-6">
+                
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+                    Expertos en Código y Negocios.
+                </h2>
+                
+                <p class="text-gray-400 leading-relaxed mb-8">
                     En NØWADAYS Studio, no somos solo diseñadores. Somos consultores técnicos con una visión orientada a objetivos comerciales. 
                     Entendemos que un sitio web es una inversión que debe generar retorno, ya sea en leads, ventas directas o posicionamiento de marca.
                 </p>
-                <div class="flex gap-8">
-                    <div>
-                        <span class="block text-2xl font-bold text-white">+2 Años</span>
-                        <span class="text-xs text-gray-500 uppercase">Experiencia</span>
+
+                <div class="mb-10">
+                    <h4 class="text-white font-bold text-sm mb-4 flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-4 h-4 text-brand-red"></i>
+                        Nuestro Arsenal Digital
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-black border border-white/10 rounded-md text-xs font-medium text-gray-300">Wordpress / Elementor</span>
+                        <span class="px-3 py-1.5 bg-black border border-white/10 rounded-md text-xs font-medium text-gray-300">Python / Django</span>
+                        <span class="px-3 py-1.5 bg-black border border-white/10 rounded-md text-xs font-medium text-gray-300">Google Analytics</span>
+                        <span class="px-3 py-1.5 bg-black border border-white/10 rounded-md text-xs font-medium text-gray-300">Shopify</span>
+                        <span class="px-3 py-1.5 bg-black border border-white/10 rounded-md text-xs font-medium text-gray-300">SQL</span>
+                        <span class="px-3 py-1.5 bg-black border border-white/10 rounded-md text-xs font-medium text-gray-300">IA</span>
                     </div>
-                    <div>
-                        <span class="block text-2xl font-bold text-white">Top 1%</span>
-                        <span class="text-xs text-gray-500 uppercase">Tecnología</span>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-8 sm:items-center border-t border-white/5 pt-8 mt-auto md:mt-0">
+                    <div class="flex gap-8">
+                        <div>
+                            <span class="block text-3xl font-bold text-white mb-0.5">+2</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wide">Años Exp.</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-bold text-white mb-0.5">Top 1%</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wide">Talento Tech</span>
+                        </div>
                     </div>
+                    
+                    <a href="nosotros.php" class="px-6 py-3 bg-brand-red text-white rounded-full font-bold hover:bg-red-700 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(220,38,38,0.4)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)] group">
+                        ¡Conócenos!
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="space-y-6 reveal delay-100">
-                <div class="bg-black border border-white/10 p-6 rounded-xl relative">
+            <div class="reveal delay-100 flex flex-col justify-between h-full gap-6">
+                
+                <div class="bg-black border border-white/10 p-8 rounded-xl relative h-full flex flex-col justify-center">
                     <i data-lucide="quote" class="w-8 h-8 text-brand-red/20 absolute top-4 right-4"></i>
-                    <p class="text-gray-300 italic mb-4">"Son unos emprendedores increíbles, las respuestas a las necesidades de la pagina las resuelven en tiempo y forma; ya casi dos años con ellos y nos sentimos muy agradecidos por su profesionalismo, honestidad y la versatilidad del diseño."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-bold text-xs text-white">MG</div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed">"Son unos emprendedores increíbles, las respuestas a las necesidades de la pagina las resuelven en tiempo y forma; ya casi dos años con ellos y nos sentimos muy agradecidos por su profesionalismo, honestidad y la versatilidad del diseño."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center font-bold text-sm text-white border border-white/10">MG</div>
                         <div>
-                            <p class="text-sm font-bold text-white">Miriam García</p>
-                            <p class="text-xs text-gray-500">Dir. Administrativa, Botanero Limón</p>
+                            <p class="font-bold text-white">Miriam García</p>
+                            <p class="text-sm text-gray-500">Dir. Administrativa, Botanero Limón</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-black border border-white/10 p-6 rounded-xl relative">
+                
+                <div class="bg-black border border-white/10 p-8 rounded-xl relative h-full flex flex-col justify-center">
                     <i data-lucide="quote" class="w-8 h-8 text-brand-red/20 absolute top-4 right-4"></i>
-                    <p class="text-gray-300 italic mb-4">"Me encantó la página web, le dieron el toque minimalista que justo estaba buscando. Además, la atención que tuvieron conmigo fue 10/10."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-bold text-xs text-white">BS</div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed">"Me encantó la página web, le dieron el toque minimalista que justo estaba buscando. Además, la atención que tuvieron conmigo fue 10/10."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center font-bold text-sm text-white border border-white/10">BS</div>
                         <div>
-                            <p class="text-sm font-bold text-white">Betzaida Sumano</p>
-                            <p class="text-xs text-gray-500">CEO, Nue Lingerie</p>
+                            <p class="font-bold text-white">Betzaida Sumano</p>
+                            <p class="text-sm text-gray-500">CEO, Nue Lingerie</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
