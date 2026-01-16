@@ -133,7 +133,7 @@ include 'includes/header.php';
                         <h3 class="text-xl font-bold mb-3">Correo Empresarial</h3>
                         <p class="text-sm text-gray-400 mb-6 leading-relaxed">Proyecta confianza inmediata con direcciones de correo electrónico personalizadas (@tuempresa.com).</p>
                         <ul class="text-sm text-gray-500 space-y-2">
-                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Dominio Propio</li>
+                            <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Dominio propio</li>
                             <li class="flex gap-2 items-center"><span class="w-1 h-1 bg-brand-red rounded-full"></span>Asesoría para migración</li>
                         </ul>
                     </div>
