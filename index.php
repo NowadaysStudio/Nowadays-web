@@ -417,7 +417,7 @@ include 'includes/header.php';
     <section id="contacto" class="py-24 px-6 relative bg-black overflow-hidden border-t border-brand-red">
         <div class="absolute inset-0 bg-brand-red/10 animate-pulse"></div>
         <div class="max-w-4xl mx-auto relative z-10 text-center bg-brand-dark/80 backdrop-blur-xl p-8 md:p-16 rounded-3xl border border-white/10 shadow-2xl">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">¿Listo para escalar?</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">¿Listo para comenzar?</h2>
             <p class="text-gray-400 mb-10 text-lg max-w-2xl mx-auto">
                 No dejes que tu competencia te gane el clic. Agenda una consultoría gratuita y descubramos cómo podemos potenciar tu negocio hoy mismo.
             </p>
@@ -445,7 +445,9 @@ include 'includes/header.php';
                                 <option value="" disabled selected>Selecciona una solución</option>
                                 <option value="Landing Page">Web Express / Landing Page</option>
                                 <option value="E-commerce">E-commerce / Tienda Online</option>
-                                <option value="Desarrollo a Medida">Desarrollo a Medida (Python/Django)</option>
+                                <option value="E-commerce">Página web profesional</option>
+                                <option value="Desarrollo a Medida">Desarrollo web a la Medida</option>
+                                <option value="E-commerce">Correos empresariales</option>
                                 <option value="Consultoria">Consultoría / Auditoría</option>
                             </select>
                             <div class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
