@@ -52,21 +52,18 @@ include 'includes/header.php';
         <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-brand-black to-transparent z-10"></div>
         
         <div class="animate-marquee" style="width: max-content;">
-            
             <div class="flex shrink-0 items-center text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
                 <span class="mx-12">Botanero Limón</span>
                 <span class="mx-12">Nue Lingerie</span>
                 <span class="mx-12">Gabrielo's Pizza</span>
                 <span class="mx-12">Boimsa</span>
             </div>
-            
             <div class="flex shrink-0 items-center text-gray-500 font-bold text-xl uppercase tracking-widest whitespace-nowrap">
                 <span class="mx-12">Botanero Limón</span>
                 <span class="mx-12">Nue Lingerie</span>
                 <span class="mx-12">Gabrielo's Pizza</span>
                 <span class="mx-12">Boimsa</span>
             </div>
-
         </div>
     </section>
 
@@ -84,7 +81,6 @@ include 'includes/header.php';
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
                 <div class="reveal delay-100 h-full">
                     <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
                         <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
@@ -98,7 +94,6 @@ include 'includes/header.php';
                         </ul>
                     </div>
                 </div>
-
                 <div class="reveal delay-200 h-full">
                     <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
                         <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
@@ -112,7 +107,6 @@ include 'includes/header.php';
                         </ul>
                     </div>
                 </div>
-
                 <div class="reveal delay-300 h-full">
                     <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
                         <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
@@ -126,7 +120,6 @@ include 'includes/header.php';
                         </ul>
                     </div>
                 </div>
-
                 <div class="reveal delay-400 h-full">
                     <div class="group bg-brand-gray border border-white/5 p-8 rounded-2xl hover:border-brand-red/50 transition-colors duration-300 h-full">
                         <div class="w-12 h-12 bg-black rounded-lg border border-white/10 flex items-center justify-center mb-6 text-brand-red group-hover:scale-110 transition-transform">
@@ -140,7 +133,6 @@ include 'includes/header.php';
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -358,12 +350,10 @@ include 'includes/header.php';
             
             <div class="reveal delay-100 w-full">
                 <details class="group bg-brand-dark border border-white/5 rounded-2xl open:bg-white/5 w-full overflow-hidden transition-colors duration-300">
-                    
                     <summary class="p-8 flex justify-between items-center font-bold text-white list-none text-lg select-none cursor-pointer w-full transition-colors">
                         <span>¿Cuánto cuesta un proyecto de diseño web?</span>
                         <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-4"></i>
                     </summary>
-                    
                     <div class="px-8 pb-8 text-gray-400 text-base leading-relaxed pl-8">
                         <div class="border-l-2 border-brand-red/50 pl-6"> 
                             <p>Nuestros planes inician desde <strong>$3,000 MXN</strong> para Landing Pages (Web Express) hasta <strong>$6,000 MXN</strong> para sitios profesionales completos. Si tu empresa tiene necesidades más avanzadas, tenemos cotizaciones a la medida para tí.</p>
@@ -375,12 +365,10 @@ include 'includes/header.php';
 
             <div class="reveal delay-200 w-full">
                 <details class="group bg-brand-dark border border-white/5 rounded-2xl open:bg-white/5 w-full overflow-hidden transition-colors duration-300">
-                    
                     <summary class="p-8 flex justify-between items-center font-bold text-white list-none text-lg select-none cursor-pointer w-full transition-colors">
                         <span>¿Cuál es el tiempo de entrega?</span>
                         <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-4"></i>
                     </summary>
-                    
                     <div class="px-8 pb-8 text-gray-400 text-base leading-relaxed pl-8">
                         <div class="border-l-2 border-brand-red/50 pl-6">
                             <p>Uno de nuestros principios es la velocidad sin sacrificar calidad.</p>
@@ -396,12 +384,10 @@ include 'includes/header.php';
 
             <div class="reveal delay-300 w-full">
                 <details class="group bg-brand-dark border border-white/5 rounded-2xl open:bg-white/5 w-full overflow-hidden transition-colors duration-300">
-                    
                     <summary class="p-8 flex justify-between items-center font-bold text-white list-none text-lg select-none cursor-pointer w-full transition-colors">
                         <span>¿Ofrecen soporte después del lanzamiento?</span>
                         <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-4"></i>
                     </summary>
-                    
                     <div class="px-8 pb-8 text-gray-400 text-base leading-relaxed pl-8">
                         <div class="border-l-2 border-brand-red/50 pl-6">
                             <p>Sí, no te dejamos solo. Todos nuestros desarrollos incluyen <strong>1 mes de soporte técnico gratuito</strong> post-lanzamiento para asegurar que todo funcione perfecto.</p>
@@ -445,9 +431,9 @@ include 'includes/header.php';
                                 <option value="" disabled selected>Selecciona una solución</option>
                                 <option value="Landing Page">Web Express / Landing Page</option>
                                 <option value="E-commerce">E-commerce / Tienda Online</option>
-                                <option value="E-commerce">Página web profesional</option>
+                                <option value="Web Profesional">Página web profesional</option>
                                 <option value="Desarrollo a Medida">Desarrollo web a la Medida</option>
-                                <option value="E-commerce">Correos empresariales</option>
+                                <option value="Correos">Correos empresariales</option>
                                 <option value="Consultoria">Consultoría / Auditoría</option>
                             </select>
                             <div class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
@@ -473,5 +459,42 @@ include 'includes/header.php';
             </p>
         </div>
     </section>
+
+    <?php if (isset($_GET['status'])): ?>
+        <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform transition-all duration-500 translate-y-20 opacity-0">
+            
+            <?php if ($_GET['status'] == 'success'): ?>
+                <div class="flex items-center w-full max-w-xs p-4 text-white bg-gray-900 rounded-lg shadow-[0_0_20px_rgba(34,197,94,0.3)] border border-green-500/30" role="alert">
+                    <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-900/30 rounded-lg">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <div class="ml-3 text-sm font-normal">
+                        <span class="font-bold block text-green-400">¡Mensaje Enviado!</span>
+                        Pronto nos pondremos en contacto.
+                    </div>
+                    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-transparent text-gray-400 hover:text-white rounded-lg p-1.5 inline-flex h-8 w-8" onclick="closeToast()">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+            <?php elseif ($_GET['status'] == 'error' || $_GET['status'] == 'error_server' || $_GET['status'] == 'error_validation'): ?>
+                <div class="flex items-center w-full max-w-xs p-4 text-white bg-gray-900 rounded-lg shadow-[0_0_20px_rgba(220,38,38,0.3)] border border-red-500/30" role="alert">
+                    <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-900/30 rounded-lg">
+                        <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                    </div>
+                    <div class="ml-3 text-sm font-normal">
+                        <span class="font-bold block text-brand-red">Error al enviar</span>
+                        Por favor verifica tus datos.
+                    </div>
+                    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-transparent text-gray-400 hover:text-white rounded-lg p-1.5 inline-flex h-8 w-8" onclick="closeToast()">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            <?php endif; ?>
+            
+        </div>
+    <?php endif; ?>
+
+    <script src="assets/js/main.js"></script>
 
 <?php include 'includes/footer.php'; ?>
