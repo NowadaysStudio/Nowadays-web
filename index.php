@@ -348,39 +348,69 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <section class="py-24 px-6 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12 reveal">Preguntas Frecuentes</h2>
+    <section class="py-24 px-6 max-w-5xl mx-auto w-full"> 
         
-        <div class="space-y-4 reveal">
-            <details class="group bg-brand-dark border border-white/5 rounded-2xl p-6 cursor-pointer hover:border-brand-red/30 transition-colors">
-                <summary class="flex justify-between items-center font-bold text-white list-none">
-                    <span>¿Cuánto cuesta un proyecto web?</span>
-                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform"></i>
-                </summary>
-                <p class="text-gray-400 mt-4 text-sm leading-relaxed">
-                    Creemos en la transparencia. Nuestros planes inician desde $3,000 MXN para Landing Pages (Web Express) y $5,000 MXN para sitios profesionales completos. Sin costos ocultos.
-                </p>
-            </details>
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 reveal text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+            Preguntas Frecuentes
+        </h2>
+        
+        <div class="space-y-6 w-full">
+            
+            <div class="reveal delay-100 w-full">
+                <details class="group bg-brand-dark border border-white/5 rounded-2xl open:bg-white/5 w-full overflow-hidden transition-colors duration-300">
+                    
+                    <summary class="p-8 flex justify-between items-center font-bold text-white list-none text-lg select-none cursor-pointer w-full transition-colors">
+                        <span>¿Cuánto cuesta un proyecto de diseño web?</span>
+                        <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-4"></i>
+                    </summary>
+                    
+                    <div class="px-8 pb-8 text-gray-400 text-base leading-relaxed pl-8">
+                        <div class="border-l-2 border-brand-red/50 pl-6"> 
+                            <p>Nuestros planes inician desde <strong>$3,000 MXN</strong> para Landing Pages (Web Express) hasta <strong>$6,000 MXN</strong> para sitios profesionales completos. Si tu empresa tiene necesidades más avanzadas, tenemos cotizaciones a la medida para tí.</p>
+                            <p class="mt-2 text-sm text-gray-500">Nota: No tenemos costos ocultos ni letras chiquitas.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
 
-            <details class="group bg-brand-dark border border-white/5 rounded-2xl p-6 cursor-pointer hover:border-brand-red/30 transition-colors">
-                <summary class="flex justify-between items-center font-bold text-white list-none">
-                    <span>¿Cuál es el tiempo de entrega?</span>
-                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform"></i>
-                </summary>
-                <p class="text-gray-400 mt-4 text-sm leading-relaxed">
-                    Priorizamos la agilidad. Un proyecto Web Express toma de 2 a 3 semanas. Proyectos Profesionales requieren entre 4 y 6 semanas para asegurar la máxima calidad.
-                </p>
-            </details>
+            <div class="reveal delay-200 w-full">
+                <details class="group bg-brand-dark border border-white/5 rounded-2xl open:bg-white/5 w-full overflow-hidden transition-colors duration-300">
+                    
+                    <summary class="p-8 flex justify-between items-center font-bold text-white list-none text-lg select-none cursor-pointer w-full transition-colors">
+                        <span>¿Cuál es el tiempo de entrega?</span>
+                        <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-4"></i>
+                    </summary>
+                    
+                    <div class="px-8 pb-8 text-gray-400 text-base leading-relaxed pl-8">
+                        <div class="border-l-2 border-brand-red/50 pl-6">
+                            <p>Uno de nuestros principios es la velocidad sin sacrificar calidad.</p>
+                            <ul class="list-disc ml-5 mt-2 space-y-1">
+                                <li><strong>Web Express:</strong> 2 a 3 semanas.</li>
+                                <li><strong>Proyectos Profesionales/E-commerce:</strong> 4 a 6 semanas.</li>
+                                <li><strong>Proyectos a la medida:</strong> 8+ semanas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+            </div>
 
-            <details class="group bg-brand-dark border border-white/5 rounded-2xl p-6 cursor-pointer hover:border-brand-red/30 transition-colors">
-                <summary class="flex justify-between items-center font-bold text-white list-none">
-                    <span>¿Ofrecen soporte después del lanzamiento?</span>
-                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform"></i>
-                </summary>
-                <p class="text-gray-400 mt-4 text-sm leading-relaxed">
-                    Sí. Incluimos 1 mes de soporte gratuito en todos los planes. Posteriormente, ofrecemos planes de mantenimiento mensual desde $1,500 MXN que incluyen hosting, seguridad y actualizaciones.
-                </p>
-            </details>
+            <div class="reveal delay-300 w-full">
+                <details class="group bg-brand-dark border border-white/5 rounded-2xl open:bg-white/5 w-full overflow-hidden transition-colors duration-300">
+                    
+                    <summary class="p-8 flex justify-between items-center font-bold text-white list-none text-lg select-none cursor-pointer w-full transition-colors">
+                        <span>¿Ofrecen soporte después del lanzamiento?</span>
+                        <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-4"></i>
+                    </summary>
+                    
+                    <div class="px-8 pb-8 text-gray-400 text-base leading-relaxed pl-8">
+                        <div class="border-l-2 border-brand-red/50 pl-6">
+                            <p>Sí, no te dejamos solo. Todos nuestros desarrollos incluyen <strong>1 mes de soporte técnico gratuito</strong> post-lanzamiento para asegurar que todo funcione perfecto.</p>
+                            <p class="mt-2">Posteriormente, ofrecemos planes de mantenimiento y hosting opcionales desde $1,500 MXN al mes que cubren seguridad y actualizaciones continuas.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
         </div>
     </section>
 
